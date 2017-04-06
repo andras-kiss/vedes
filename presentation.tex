@@ -1,7 +1,6 @@
 \documentclass{beamer}
-%\usetheme{Berkeley}
 \usetheme{Singapore}
-%\setbeamercolor{structure}{fg=blue}
+%\setbeamercolor{structure}{fg=red}
 \usepackage{upgreek}
 \usepackage{color}
 %\def\magyarOptions{hyphenation=huhyphn}
@@ -12,6 +11,9 @@
 \usepackage{gensymb}
 \usepackage{tikz}
 \usepackage[framemethod=tikz]{mdframed}
+\usepackage[version=3]{mhchem}
+
+
 \normalfont
 \title{Recent Advances in Potentiometric Scanning Electrochemical Microscopy}
 \author
@@ -122,6 +124,7 @@ Corrosion of the AZ63 magnesium-aluminium-zinc alloy.
 
 \begin{frame}
 \frametitle{Trade-off triangle of potentiometric SECM}
+\framesubtitle{Compromise between the three desired competing properties}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{trade-off.eps}
 \end{center}
@@ -145,7 +148,7 @@ Solid contact micropipettes as SECM probes.
 
 \begin{frame}
 \frametitle{Comparison of the electrodes' resistance}
-\framesubtitle{Experimental setup and result}
+\framesubtitle{Voltage divider method and result}
 \begin{center}
 \includegraphics[width=0.7\textwidth]{divider_switch.jpg}
 \vfill
@@ -175,6 +178,8 @@ Solid contact micropipettes as SECM probes.
 	\frametitle{Comparison of the electrodes' performance} 
 	\framesubtitle{Results}
 	\centering
+	\quad\quad\quad\quad Liquid contact \hfill Solid contact \quad\quad\quad\quad\quad
+
 	\includegraphics[trim = 10mm 30mm 0mm 20mm, clip, width=0.4\textwidth, angle=-90]{liquid_Mg.eps}\hfill\includegraphics[trim = 10mm 30mm 0mm 20mm, clip, width=0.4\textwidth, angle=-90]{solid_Mg.eps}
 \end{frame}
 
@@ -197,36 +202,11 @@ Solid contact micropipettes as SECM probes.
 
 
 
-\begin{frame}[plain]
+\begin{frame} [plain]
 \centering
 Solution \#2:
 Optimizing scanning patterns and algorithms.
 \end{frame}
-
-\begin{frame}
-	\frametitle{"Traditional" scanning algorithms for the 2D raster pattern}
-	\framesubtitle{1. "Meander" and "fast comb" scanning algorithms}
-	\includegraphics[width=0.3\textwidth, angle=-90]{meander_pattern.eps}\includegraphics[width=0.3\textwidth, angle=-90]{meander_sim.eps}\\
-		\includegraphics[width=0.3\textwidth, angle=-90]{fastcomb_pattern.eps}\includegraphics[width=0.3\textwidth, angle=-90]{fastcomb_sim.eps}
-	\vfill
-\end{frame}
-
-\begin{frame}
-	\frametitle{"Traditional" scanning algorithms for the 2D raster pattern}
-	\framesubtitle{2. "Comb" scanning algorithm}
-	\includegraphics[width=0.3\textwidth, angle=-90]{comb_pattern.eps}\includegraphics[width=0.3\textwidth, angle=-90]{comb_sim.eps}
-	\vfill
-\end{frame}
-
-
-
-\begin{frame}
-	\frametitle{The RC time constant} 
-	\centering
-	\includegraphics[width=1\textwidth]{t.eps}
-\end{frame}
-
-
 
 \begin{frame}
 	\frametitle{New SECM scanning patterns based on the polar-coordinate system}
@@ -236,219 +216,154 @@ Optimizing scanning patterns and algorithms.
 	\vfill
 \end{frame}
 
-
-
 \begin{frame}
-	\frametitle{New SECM scanning patterns based on the polar-coordinate system}	
-	\framesubtitle{Simulated scans with the "web" and the "arc" algorithms}
-	\includegraphics[width=0.3\textwidth, angle=-90]{web_pattern.eps}\includegraphics[width=0.3\textwidth, angle=-90]{web_sim.eps}\\
-		\includegraphics[width=0.3\textwidth, angle=-90]{arc_pattern.eps}\includegraphics[width=0.3\textwidth, angle=-90]{arc_sim.eps}
+	\frametitle{Simulated SECM scans}	
+	\framesubtitle{Using the Cartesian and the polar coordinate system based algorithms}
+	\centering
+	\includegraphics[width=0.3\textwidth, angle=-90]{meander_sim.eps}\includegraphics[width=0.3\textwidth, angle=-90]{arc_sim.eps}
 	\vfill
 \end{frame}
 
 
 \begin{frame}
 	\frametitle{Comparison of the simulated scans}
-Parameters of the simulations:\\
-\begin{itemize}
-\item 2000 $\upmu$m $\times$ 2000 $\upmu$m scan area,
-\item 100 $\upmu$m $\times$ 100 $\upmu$m resolution,
-\item 1 s for each data aquisition point,
-\item 500 $\upmu$m/s probe positioning speed.
-\end{itemize}
+%Parameters of the simulations:\\
+%\begin{itemize}
+%\item 2000 $\upmu$m $\times$ 2000 $\upmu$m scan area,
+%\item 100 $\upmu$m $\times$ 100 $\upmu$m resolution,
+%\item 1 s for each data aquisition point,
+%\item 500 $\upmu$m/s probe positioning speed.
+%\end{itemize}
 
-\vfill
+%\vfill
 \begin{table}
 		\label{table:comp}
 		\centering
 		\begin{tabular}{r c c c}
-			Algorithm & \#n & time (s) & mean squared error \\
+			Algorithm & n & time (s) & mean squared error \\
 			\hline
-			Meander & 441 & 440 & $2.75\times 10^{-2}$ \\
-			Fast comb& 441 & 520  & $2.07\times 10^{-2}$ \\
-			Comb & 441 & 881 & $2.75\times 10^{-2}$ \\
-			Web & 110 & 109 & $9.63\times 10^{-3}$ \\
-			Arc & 341 & 340 & $2.95\times 10^{-3}$ \\
+			Meander & 441 & 440 & \textcolor{white!100}{\colorbox{red!100}{$2.75\times 10^{-2}$}} \\
+			Fast comb& 441 & 520  & \colorbox{white}{$2.07\times 10^{-2}$} \\
+			Comb & 441 & 881 & \colorbox{white}{$2.75\times 10^{-2}$} \\
+			Web & 110 & 109 & \colorbox{white}{$9.63\times 10^{-3}$} \\
+			Arc & 341 & 340 & \colorbox{green!100}{$2.95\times 10^{-3}$} \\
 		\end{tabular}
 \end{table}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Confirmation with experimental SECM scans}
-	\framesubtitle{Traditional scanning algorithms}
-	\includegraphics[width=0.3\textwidth, angle=-90]{meander.eps}\includegraphics[width=0.3\textwidth, angle=-90]{fastcomb.eps}\\
-	\includegraphics[width=0.3\textwidth, angle=-90]{comb.eps}
-	\vfill
-	Images recorded with the meander, fast comb, and comb algorithms.
-\end{frame}
-
-\begin{frame}
-	\frametitle{Confirmation with experimental SECM scans}
-	\framesubtitle{New scanning algorithms}
-	\includegraphics[width=0.3\textwidth, angle=-90]{web.eps}\includegraphics[width=0.3\textwidth, angle=-90]{arc.eps}
-	\vfill
-	Images recorded with the web, and the arc algorithms.
-	\vfill
-	Scans are completed 75\% and 20\% faster, images have almost 10 times less distortion.
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Example 1: SECM study on the effectiveness of corrosion protection coatings using the arc scanning pattern}
-	\centering
-	\includegraphics[width=1\textwidth]{nickel.eps}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Example 2: SECM study on the galvanic corrosion of the AZ63 alloy and iron, using the arc scanning pattern}
-	\centering
-	\includegraphics[width=0.4\textwidth]{galvanic.eps}
-	
-	pH-dependent potential map above the corroding (A) magnesium, and (B) iron samples.
-\end{frame}
-
-
-
-\begin{frame}
+\frametitle{Confirmation with experimental SECM scans}
+\framesubtitle{Antimony microelectrode as pH sensor}
 \centering
-Solution \#2: Signal processing.
+\begin{equation*}
+    \ce{2Sb + 3H_2O <=> Sb_2O_3 + 6H^+ + 6e^-}
+\end{equation*}
+\includegraphics[width=0.7\textwidth]{antimony.eps}
+
+%\includegraphics[width=0.4\textwidth]{sb.jpg}
+\end{frame} 
+
+
+\begin{frame}
+	\centering
+	\frametitle{Confirmation with experimental SECM scans}
+	\framesubtitle{Recorded using the antimony microelectrode}
+	\includegraphics[width=0.3\textwidth, angle=-90]{meander.eps}\includegraphics[width=0.3\textwidth, angle=-90]{arc.eps}\\
+	\vfill
+	Scans are completed almost 2 times faster,\\ images have almost 10 times less distortion.
+\end{frame}
+
+\begin{frame}[plain]
+\centering
+Solution \#3: Signal processing.
 \end{frame}
 
 \begin{frame}
-\frametitle{Deconvolution of the distorted image}
+\frametitle{The convolution function of the distortion}
 \centering	
-\includegraphics[width=0.8\textwidth]{t.eps}\\
+\includegraphics[width=1\textwidth]{t.eps}\\
 \vfill
 $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/RC}$\\
 \vfill
-$E_{cell}(\infty)	= \frac {\displaystyle [E_{cell}(t) - E_{cell}(0)]e^{-t/RC}}	{\displaystyle 1 - e^{-t/RC}}$
+%$E_{cell}(\infty)	= \frac {\displaystyle [E_{cell}(t) - E_{cell}(0)]e^{-t/RC}}	{\displaystyle 1 - e^{-t/RC}}$
+\end{frame}
+
+\begin{frame}
+\frametitle{Convolution and deconvolution}
+\centering
+\begin{tikzpicture}[node distance = 2.5cm, auto]
+\node [rectangle, draw, fill=green!20,text width=7em, text centered, rounded corners, minimum height=4em] (reality) {reality};
+\node [rectangle, below of=reality, draw, fill=red!20,text width=7em, text centered, rounded corners, minimum height=4em] (measurement) {image};
+\node [rectangle, below of=measurement, draw, fill=green!20,text width=7em, text centered, rounded corners, minimum height=4em] (image) {deconvoluted\\ image};
+
+\draw [line width=0.5mm, ->] (reality) -- (measurement) node [pos=.5, right] (TextNode) {convolution : \small $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/RC}$};
+\draw [line width=0.5mm, ->] (measurement) -- (image) node [pos=.5, right] (TextNode) {deconvolution : \small $E_{cell}(\infty)      = \frac {\displaystyle [E_{cell}(t) - E_{cell}(0)]e^{-t/RC}}    {\displaystyle 1 - e^{-t/RC}}$};
+
+
+\end{tikzpicture}
 \end{frame}
 
 
 \begin{frame}
-\begin{figure}
-\begin{center}
-\includegraphics[width=0.3\textwidth, angle=-90]{transient.eps}
+	\frametitle{Deconvolution of potentiometric SECM images}
+	\framesubtitle{Recorded using the antimony microelectrode following the meander algorithm}
+\centering
 
-\includegraphics[width=0.3\textwidth, angle=-90]{transient_cut.eps}
-\end{center}
-\vspace{0.5cm}
+\def\s{0.15}
 
-Response of an antimony/antimony-oxid - Ag/AgCl/3M KCl cell when pH changes from 4 to 6. RC time constant was determined from the fit.
+\begin{columns}[T] % align columns
 
-%\caption{Transient response of the antimony microelectrode to analyte activity step. (A) The measuring and reference electrodes were dipped into buffer solutions with pH = 4 and pH = 6 respectively. (B) Response function fit (solid black line) on the section (red dots) of (A) from the pH step to the end of the curve when potential reaches equilibrium in the pH = 6 buffer.}
-\label{fig:transient}
-\end{figure}
+\begin{column}{.2\textwidth}
+\begin{minipage}[c][0.75\textheight][c]{\linewidth}
+\centering
+%raw\\
+%images
+\end{minipage}
+\end{column}%
+\hfill%
+\begin{column}{.2\textwidth}
+\centering
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121313.eps}\\
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121314.eps}\\
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121315.eps}\\
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121316.eps}\\
+\end{column}%
+\begin{column}{.2\textwidth}
+\begin{minipage}[c][0.7\textheight][c]{\linewidth}
+\centering
+\begin{tikzpicture}
+\draw [line width=0.5mm,->] (0,0) -- (2,0) node [pos=.5, above] (TextNode) {deconvolution};
+\end{tikzpicture}
+\end{minipage}
+\end{column}%
+\begin{column}{.2\textwidth}
+\centering
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121313_deconvoluted.eps}\\
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121314_deconvoluted.eps}\\
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121315_deconvoluted.eps}\\
+\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.8\textwidth, angle=-90]{13121316_deconvoluted.eps}\\
+\end{column}%
+\begin{column}{.2\textwidth}
+\begin{minipage}[c][0.75\textheight][c]{\linewidth}
+\centering
+%deconvoluted\\
+%images
+\end{minipage}
+\end{column}%
+\end{columns}
 \end{frame}
-
-
-\begin{frame}
-\frametitle{Minimal working example:}
-\framesubtitle{Deconvolution of a response to activity step}
-\begin{center}
-\includegraphics[width=0.4\textwidth, angle=-90]{transient3.eps}
-\end{center}
-
-Transient response of the antimony microelectrode to analyte activity step (red), and deconvolutions performed with different $RC$ time-constants. The measured time-constant was $\tau = 3.76 s$ (cyan).
-\end{frame}
-
-\begin{frame}
-\frametitle{Comparison of the deconvoluted time-potential recordings.}
-\begin{table}
-            %    \caption{Comparison of the deconvoluted time-potential recordings.}
-                \label{table:rc}
-                \centering
-                \begin{tabular}{r c c c}
-                        $e^{-0.5/RC}$ & $RC (s)$ & Mean squared error \\
-                        \hline
-                        raw recording (0) & raw recording (0) & 53.43 \\
-                        0.7 & 1.4 & 22.03  \\
-                        0.75 & 1.74 & 15.88  \\
-                        0.8 & 2.24 & 9.01 \\
-                        \textbf{0.8755} & \textbf{3.76} & \textbf{3.83} \\
-                        0.9 & 4.75 & 16.99 \\
-                        0.95 & 9.75 & 781.94 \\
-                \end{tabular}
-\end{table}
-\end{frame}
-
-%\begin{frame}
-%\frametitle{SECM setup to test deconvolution}
-%\begin{figure}
-%\centering
-%\includegraphics[width=0.8\textwidth]{model.eps}
-%\caption{Sketch of the moulded model targets and the SECM scan setup used for these targets.}
-%\end{figure}
-%\end{frame}
-
-
-\begin{frame}
-\frametitle{One step further}
-\framesubtitle{Deconvolution of linescans}
-\begin{center}
-% trim = top left bottom right
-\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.3\textwidth, angle=-90]{raw_lines_pH.eps}\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.3\textwidth, angle=-90]{deconvoluted_lines_pH.eps}
-%\includegraphics[trim = 0mm 0mm 0mm 0mm, clip, width=0.3\textwidth, angle=-90]{deconvoluted_lines8.eps}
-\end{center}
-(A) Raw, and, (B) deconvoluted SECM linescans above the center of the target, at h = 100 mm height, using three different equilibration periods: 0.5 s, (green), 1 s, (blue), and 5 s, (red).
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Deconvolution of the distorted image}
-	\framesubtitle{pH microscopy with antimony microelectrode}
-	\includegraphics[width=0.3\textwidth, angle=-90]{13121313.eps}
-	\includegraphics[width=0.3\textwidth, angle=-90]{13121313_deconvoluted.eps}\\
-\end{frame}
-
-
-%\begin{frame}
-%	\frametitle{Deconvolution of the distorted image}
-%	\includegraphics[width=0.3\textwidth, angle=-90]{13121313.eps}
-%	\includegraphics[width=0.3\textwidth, angle=-90]{13121313_deconvoluted.eps}\\
-%\end{frame}
-
-%\begin{frame}
-%	\centering
-%	\includegraphics[width=0.8\textwidth]{polar_paper.eps}
-%	\vfill	
-%	\vfill
-%	\includegraphics[width=0.8\textwidth]{deconvolution_paper.eps}
-%\end{frame}
 
 \begin{frame}
 \begin{center}
-\frametitle{Linescans with magnesium-ion selective micropipettes, and their deconvolution}
-\includegraphics[width=0.3\textwidth]{mg.pdf}
-\end{center}
-\end{frame}
-
-
-\begin{frame}
-\begin{center}
-\frametitle{2D scans with magnesium-ion selective micropipettes, and their deconvolution}
+\frametitle{Deconvolution of potentiometric SECM images}
+\framesubtitle{Recorded using the magnesium ISME following the meander algorithm}
 \includegraphics[width=0.6\textwidth]{mg_2d.pdf}
 \end{center}
 \end{frame}
 
-
 \begin{frame}
-	\frametitle{Example 3: SECM study on the galvanic corrosion of a zinc - copper galvanic pair}
-	\framesubtitle{With antimony microelectrode}
-\begin{figure}
-\centering
-%top left bottom right
-\includegraphics[width=0.5\textwidth]{1.pdf}
-
-\includegraphics[width=0.5\textwidth]{1_deconvoluted.pdf}
-
-%\caption[Raw, and deconvoluted SECM image of a galvanically coupled zinc-copper pair.]{Raw (A), and deconvoluted (B) SECM image of a galvanically coupled zinc-copper pair. Left: zinc, right: copper. Diameter of the zinc and copper samples was 200 $\upmu$m. Corrosive electrolyte was 1 mM NaCl. Recorded $h$ = 100 $\upmu$m over the surface with a scanrate of 12.5 $\upmu$m/s.}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Example 4: Raw, and deconvoluted SECM image and microphoto of a corroding carbon-steel sample.}
-\framesubtitle{With antimony microelectrode}
+\frametitle{Practical example: corroding carbon steel sample}
+\framesubtitle{Scanned with an antimony microelectrode}
 \begin{figure}
 \centering
 %top left bottom right
@@ -460,31 +375,89 @@ Transient response of the antimony microelectrode to analyte activity step (red)
 \end{figure}
 \end{frame}
 
-
-
-\begin{frame}
-	\frametitle{Summary}
-\begin{itemize}
-	\item Compromise between image quality and scan time in potentoimetric SECM.
-	\item I've demonstrated two approaches to alleviate this compromise.
-	\item With optimized scanning patterns and algorithms, scans are faster up to 4 times, imaging distortion is 10 times less.
-	\item These algorithms work only with radially symmetric targets.
-	\item Another approach is to deconvolution. Can be applied to any system. Image quality is drastically improved, and scan time is shorter.
-\end{itemize}
+\begin{frame}[plain]
+\centering
+The effect of electric field on potentiometric SECM imaging.
 \end{frame}
 
-%\begin{frame}
-%	\frametitle{Acknowledgements}
+\begin{frame}
+\begin{center}
+\frametitle{The electric field during galvanic corrosion}
+\includegraphics[width=0.5\textwidth]{field.eps}
 
-
-%This research was supported by the European Union and the State of Hungary, co-financed by the European Social Fund in the framework of T\'{A}MOP-4.2.4.A/ 2-11/1-2012-0001 'National Excellence Program'.	
-
-%\end{frame}
-
-
+\begin{equation*}
+\Delta E=E_M-E_R + (\phi_M - \phi_R)
+\label{eq:potential}
+\end{equation*}
+\end{center}
+\end{frame}
 
 \begin{frame}
-\includegraphics[width=1\textwidth]{pecs.eps}
+\frametitle{The effect of electric field on the measured potential}
+\framesubtitle{}
+\centering
+\includegraphics[width=0.466\textwidth]{field-figure1.pdf}\includegraphics[width=0.5\textwidth]{field-figure0.pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{The effect of electric field on potentiometric SECM imaging}
+\centering
+\includegraphics[trim = 10mm 20mm 0mm 10mm, clip, width=0.36\textwidth, angle=-90]{17012501.eps}\includegraphics[trim = 10mm 20mm 0mm 10mm, clip, width=0.36\textwidth, angle=-90]{17012503_deconvoluted.eps}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+\begin{enumerate}
+\item I've successfully shortened the response time of the potentiometric cell by using low resistance, solid-contact microelectrodes.
+I've compared them to conventional, liquid contact microelectrodes by basic characterization and model system study to prove the improved performance.
+
+\item Taking adventage of the new solid-contact electrodes, I've studied the galvanic corrosion of magnesium and the AZ63 magnesium alloy by mapping the concentration of dissolving ions.
+I used the new solid contact ion selective microelectrodes as SECM probes. This allowed faster scan rates.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+\begin{enumerate}
+\setcounter{enumi}{2}
+\item I've estimated the corrosion current based on the SECM measurements, and compared the result with that obtained with another, established method; the indirect measurement of corrosion current.
+After applying Faraday's Law of Electrolysis, the two results could be compared.
+They were very similar, suggesting the applicability of SECM in obtaining quantitative results.
+
+\item I've designed new scanning patterns and algorithms, optimized to radially symmetric targets.
+I've proven that with these new patterns and algorithms, image distortion is lower compared to the conventional ones, by numerical simulations and experimental SECM scans.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+\begin{enumerate}
+\setcounter{enumi}{4}
+\item I've shown that by using deconvolution, \emph{RC} distortion can be significantly lowered in the potentiometric SECM images.
+To prove the validity of the technique, I've compared deconvoluted images to equilibrium images scanned at a rate which allowed to record equilibrium potentials.
+
+\item I've used deconvolution to restore potentiometric SECM images about a corroding carbon steel sample.
+Evaluation of this data was possible, because scanning time \emph{and} distortion was reduced at the same time.
+
+\item I've shown the applicability of blind deconvolution.
+This method can be used on measurements where the convolution function cannot be determined.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusions}
+\begin{enumerate}
+\setcounter{enumi}{7}
+\item I've proven that the electric field present in many studied systems -- galvanically corroding ones in particular -- affects the measured potential.
+The electric field has a direct influence on the measured potential, which is then a sum of this contribution and the Nernstian response associated with ion activity.
+This effect can cause serious errors in interpretations in the measurements.
+In this case, the error was almost four orders of magnitude.
+By taking this effect into account, a more accurate conclusion can be drawn.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Acknowledgements}
 \end{frame}
 
 \end{document}
