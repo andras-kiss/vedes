@@ -88,14 +88,19 @@ Nikolsky--equation
 \end{frame}
 
 \begin{frame}
+\frametitle{Why is the image distorted?}
+\framesubtitle{Possible contributors to the lag}
+\centering
+\includegraphics[width=0.8\textwidth]{npp.eps}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Why is the image distorted?}
 	\framesubtitle{The RC time constant} 
 	\centering
 	\includegraphics[width=1\textwidth]{RC.eps}
 	\vfill
-	The time required to discharge the capacitor by $\approx 37\%$ $(1/e)$.
-	
-	Or to charge it by $\approx 63\%$ $(1-1/e)$.	
+	The time that is required to charge \\ the capacitor by $\approx 63\%$ $(1-1/e)$.	
 	\vfill
 	$\tau = R \cdot C$
 	
@@ -290,7 +295,7 @@ Solution \#3: Signal processing.
 \centering	
 \includegraphics[width=1\textwidth]{t.eps}\\
 \vfill
-$E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/RC}$\\
+$E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/\tau}$\\
 \vfill
 %$E_{cell}(\infty)	= \frac {\displaystyle [E_{cell}(t) - E_{cell}(0)]e^{-t/RC}}	{\displaystyle 1 - e^{-t/RC}}$
 \end{frame}
@@ -303,8 +308,8 @@ $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/RC}$\\
 \node [rectangle, below of=reality, draw, fill=red!20,text width=7em, text centered, rounded corners, minimum height=4em] (measurement) {image};
 \node [rectangle, below of=measurement, draw, fill=green!20,text width=7em, text centered, rounded corners, minimum height=4em] (image) {deconvoluted\\ image};
 
-\draw [line width=0.5mm, ->] (reality) -- (measurement) node [pos=.5, right] (TextNode) {convolution : \small $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/RC}$};
-\draw [line width=0.5mm, ->] (measurement) -- (image) node [pos=.5, right] (TextNode) {deconvolution : \small $E_{cell}(\infty)      = \frac {\displaystyle [E_{cell}(t) - E_{cell}(0)]e^{-t/RC}}    {\displaystyle 1 - e^{-t/RC}}$};
+\draw [line width=0.5mm, ->] (reality) -- (measurement) node [pos=.5, right] (TextNode) {convolution : \small $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/\tau}$};
+\draw [line width=0.5mm, ->] (measurement) -- (image) node [pos=.5, right] (TextNode) {deconvolution : \small $E_{cell}(\infty)      = \frac {\displaystyle [E_{cell}(t) - E_{cell}(0)]e^{-t/\tau}}    {\displaystyle 1 - e^{-t/RC}}$};
 
 
 \end{tikzpicture}
@@ -440,7 +445,7 @@ I've proven that with these new patterns and algorithms, image distortion is low
 \frametitle{Conclusions}
 \begin{enumerate}
 \setcounter{enumi}{4}
-\item I've shown that by using deconvolution, \emph{RC} distortion can be significantly lowered in the potentiometric SECM images.
+\item I've shown that by using deconvolution, distortion can be significantly lowered in the potentiometric SECM images.
 To prove the validity of the technique, I've compared deconvoluted images to equilibrium images scanned at a rate which allowed to record equilibrium potentials.
 
 \item I've used deconvolution to restore potentiometric SECM images about a corroding carbon steel sample.
@@ -465,6 +470,17 @@ By taking this effect into account, a more accurate conclusion can be drawn.
 
 \begin{frame}
 	\frametitle{Acknowledgements}
+\end{frame}
+
+\begin{frame}
+	\frametitle{List of publication}
+\end{frame}
+
+\begin{frame}
+	\frametitle{}
+	\centering
+\includegraphics[width=0.8\textwidth]{HL1.eps}
+
 \end{frame}
 
 \end{document}
