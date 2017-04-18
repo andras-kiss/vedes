@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.13)  18 APR 2017 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.4.13)  18 APR 2017 23:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1792,15 +1792,20 @@ Package pdftex.def Info: fastcomb_sim-eps-converted-to.pdf used on input line 8
 
  <./real-eps-converted-to.pdf> <./fastcomb_sim-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <npp.eps>
-(epstopdf)                    date: 2017-04-18 18:27:12
-(epstopdf)                    size: 583977 bytes
+(epstopdf)                    date: 2017-04-18 23:30:51
+(epstopdf)                    size: 585454 bytes
 (epstopdf)             Output file: <npp-eps-converted-to.pdf>
 (epstopdf)                    date: 2017-04-18 18:27:18
 (epstopdf)                    size: 491257 bytes
 (epstopdf)             Command: <repstopdf --outfile=npp-eps-converted-to.pdf n
 pp.eps>
 (epstopdf)             \includegraphics on input line 96.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=npp-eps-converted-to.pdf npp.eps)...executed safe
+ly (allowed).
+
+Package epstopdf Info: Result file: <npp-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-18 23:30:58
+(epstopdf)                    size: 492277 bytes.
 
 <npp-eps-converted-to.pdf, id=166, 845.1575pt x 599.23875pt>
 File: npp-eps-converted-to.pdf Graphic file (type pdf)
@@ -2873,7 +2878,7 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/euler/eurm10.pfb>
-Output written on presentation.pdf (45 pages, 13553020 bytes).
+Output written on presentation.pdf (45 pages, 13554030 bytes).
 PDF statistics:
  1871 PDF objects out of 2073 (max. 8388607)
  1607 compressed objects within 17 object streams
