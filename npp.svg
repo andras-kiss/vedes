@@ -150,9 +150,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="518.66225"
-     inkscape:cy="229.3692"
+     inkscape:zoom="0.35"
+     inkscape:cx="594.7114"
+     inkscape:cy="462.99927"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -171,7 +171,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -279,7 +279,7 @@
          id="tspan1050"
          x="-49.136906"
          y="366.83997"
-         style="stroke-width:0.26458332px"></tspan></text>
+         style="stroke-width:0.26458332px" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -305,7 +305,9 @@
          id="tspan1006-6"
          x="180.60748"
          y="190.51981"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332px">Li<tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.11111069px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke-width:0.26458332px"><tspan
+   style="fill:#000000"
+   id="tspan229">L</tspan>i<tspan
    style="font-size:8.46666622px;baseline-shift:super;fill:#ff0000;stroke-width:0.26458332px"
    id="tspan1010-0">+</tspan></tspan></text>
     <g
@@ -382,24 +384,36 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="149.27628"
-       y="263.85861"
+       x="164.24336"
+       y="241.9425"
        id="text2449"><tspan
          sodipodi:role="line"
          id="tspan2447"
-         x="149.27628"
-         y="263.85861"
+         x="164.24336"
+         y="241.9425"
          style="stroke-width:0.26458332px">1. diffusion / convection</tspan><tspan
          sodipodi:role="line"
-         x="149.27628"
-         y="277.08777"
+         x="164.24336"
+         y="255.17166"
          style="stroke-width:0.26458332px"
          id="tspan2451">2. flux of ion i</tspan><tspan
          sodipodi:role="line"
-         x="149.27628"
-         y="290.31696"
+         x="164.24336"
+         y="268.40085"
          style="stroke-width:0.26458332px"
-         id="tspan2455">3. complexation reaction</tspan></text>
+         id="tspan2455">3. complexation reaction</tspan><tspan
+         sodipodi:role="line"
+         x="164.24336"
+         y="281.63"
+         style="stroke-width:0.26458332px"
+         id="tspan221">L: ligand</tspan><tspan
+         sodipodi:role="line"
+         x="164.24336"
+         y="294.85916"
+         style="stroke-width:0.26458332px"
+         id="tspan223">i<tspan
+   style="font-size:7.05555534px;baseline-shift:super"
+   id="tspan225">+</tspan>: measured ion</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot2576"
@@ -410,7 +424,7 @@
            height="68.571426"
            x="-402.85715"
            y="367.98651" /></flowRegion><flowPara
-         id="flowPara2582"></flowPara></flowRoot>    <text
+         id="flowPara2582" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="188.23215"
@@ -420,6 +434,6 @@
          id="tspan2677"
          x="188.23215"
          y="284.81912"
-         style="stroke-width:0.26458332px"></tspan></text>
+         style="stroke-width:0.26458332px" /></text>
   </g>
 </svg>
