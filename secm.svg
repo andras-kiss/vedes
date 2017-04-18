@@ -14,7 +14,7 @@
    height="770.96875"
    id="svg68187"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="secm.svg">
   <defs
      id="defs68189">
@@ -154,9 +154,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="381.60911"
-     inkscape:cy="105.94343"
+     inkscape:zoom="0.7"
+     inkscape:cx="391.19598"
+     inkscape:cy="374.50685"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -164,9 +164,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="529"
-     inkscape:window-height="861"
-     inkscape:window-x="534"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
      inkscape:window-y="18"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="true"
@@ -190,7 +190,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -219,7 +219,7 @@
        sodipodi:nodetypes="ccccc" />
     <path
        sodipodi:type="arc"
-       style="opacity:0.78969954;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:0.9942596;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="opacity:0.78969953999999998;fill:#ff0000;fill-opacity:1;stroke:#ffffff;stroke-width:0.99425960000000002;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="path3977"
        sodipodi:cx="1420.0294"
        sodipodi:cy="-181.26721"
@@ -227,30 +227,6 @@
        sodipodi:ry="6.213335"
        d="m 1433.3034,-181.26721 c 0,3.43153 -5.943,6.21333 -13.274,6.21333 -7.331,0 -13.2739,-2.7818 -13.2739,-6.21333 0,-3.43153 5.9429,-6.21334 13.2739,-6.21334 7.331,0 13.274,2.78181 13.274,6.21334 z"
        transform="matrix(3.8481443,-0.17062145,0.13673516,4.1524731,-3703.6342,1913.7838)" />
-    <text
-       xml:space="preserve"
-       style="font-size:35.39836502px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1704.4474"
-       y="924.59363"
-       id="text3890-4"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan3892-2"
-         x="1704.4474"
-         y="924.59363"
-         style="font-size:24.77885628px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial">target</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:48.97222136999999975px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
-       x="1811.844"
-       y="907.35669"
-       id="text68127-2"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan68129-5"
-         x="1811.844"
-         y="907.35669"
-         style="font-size:24px;fill:#ffffff">studied system</tspan></text>
     <path
        style="opacity:0.41630901;fill:#00ff00;fill-opacity:1;stroke:#ff00ff;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4"
        d="m 1387.5716,869.50477 373.3204,-152.505 328.8388,152.505 -375.9359,178.94953 z"
@@ -267,6 +243,30 @@
        sodipodi:ry="113.13708"
        d="m 127.72329,562.43817 c 0,62.48388 -81.958592,113.13708 -183.059643,113.13708 -101.101047,0 -183.059647,-50.6532 -183.059647,-113.13708 0,-62.48388 81.9586,-113.13708 183.059647,-113.13708 101.101051,0 183.059643,50.6532 183.059643,113.13708 z"
        transform="translate(1798.2502,360.69488)" />
+    <text
+       xml:space="preserve"
+       style="font-size:35.39836501999999996px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#ffffff;font-family:Sans"
+       x="1704.4474"
+       y="924.59363"
+       id="text3890-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3892-2"
+         x="1704.4474"
+         y="924.59363"
+         style="font-size:24.77885627999999940px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;font-family:Arial;-inkscape-font-specification:Arial;stroke:#ffffff">target</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:48.97222136999999975px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1811.844"
+       y="907.35669"
+       id="text68127-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan68129-5"
+         x="1811.844"
+         y="907.35669"
+         style="font-size:24px;fill:#ffffff">studied system</tspan></text>
     <path
        style="fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 1600.7271,889.77247 20.4993,-25.3805 31.6968,19.3832 z"
