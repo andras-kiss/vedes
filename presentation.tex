@@ -18,13 +18,14 @@
 
 \normalfont
 \title{Recent Advances in Potentiometric Scanning Electrochemical Microscopy}
-\subtitle{PhD Thesis submitted for final defense}
+%\subtitle{PhD Thesis submitted for final defense}
 \author
-{author:\\
-András Kiss\\
-\hfill \\
-supervisor:\\
-prof. Géza Nagy}
+{
+Dr. András Kiss\\
+%\hfill \\
+%supervisor:\\
+%prof. Géza Nagy
+}
 
 \institute
 {
@@ -34,7 +35,7 @@ prof. Géza Nagy}
   \hfill \\
 
   \includegraphics[width=0.14\textwidth]{pte_logo.eps}\\
-  June 16, 2017
+  %June 16, 2017
 }
 
 \date[]
@@ -42,6 +43,9 @@ prof. Géza Nagy}
 \begin{document}
 \frame{\titlepage}  
 
+\begin{frame}[plain]
+	\includegraphics[width=1\textwidth]{fizkem.eps}
+\end{frame}
 
 \begin{frame}
 	\centering
@@ -311,11 +315,8 @@ $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/\tau}$\\
 
 \draw [line width=0.5mm, ->] (reality) -- (measurement) node [pos=.5, right] (TextNode) {convolution : \small $E_{cell}(t) = E_{cell}(\infty) + [E_{cell}(0) - E_{cell}(\infty)]e^{-t/\tau}$};
 \draw [line width=0.5mm, ->] (measurement) -- (image) node [pos=.5, right] (TextNode) {deconvolution : \small $E_{cell}(\infty)      = \frac {\displaystyle E_{cell}(t) - E_{cell}(0)e^{-t/\tau}}    {\displaystyle 1 - e^{-t/RC}}$};
-
-
 \end{tikzpicture}
 \end{frame}
-
 
 \begin{frame}
 	\frametitle{Deconvolution of potentiometric SECM images}
@@ -425,85 +426,24 @@ The effect of electric field on potentiometric SECM imaging.
 %\end{frame}
 
 \begin{frame}
-\frametitle{Thesis 1--4}
+\frametitle{Conclusion}
 \scriptsize
 \begin{enumerate}
 \item \textbf{I have shown the improved quality of potentiometric SECM images recorded with low resistance, solid-contact magnesium ion-selective microelectrodes.}
-I've compared them to conventional, liquid contact microelectrodes by basic characterization and model system study to prove the improved performance.
 
-\item \textbf{Taking advantage of the new solid-contact microelectrodes, I have studied the galvanic corrosion of magnesium} and the AZ63 magnesium alloy by mapping the concentration of dissolving ions.
-The new solid contact ion selective microelectrodes allowed faster scan rates.
+\item \textbf{Taking advantage of the new solid-contact microelectrodes, I have studied the galvanic corrosion of magnesium by mapping the concentration of dissolving ions.}
 
-\item \textbf{I have estimated the corrosion current based on the SECM measurements, and compared the result with the direct measurement of corrosion current.}
-After applying Faraday's Law of Electrolysis, the two results could be compared.
-\textbf{They were very similar}, suggesting the applicability of SECM in obtaining quantitative results.
+\item \textbf{I have proven that with the new patterns and algorithms that I have designed, image distortion is lower compared to the conventional ones, by numerical simulations and experimental SECM scans.}
 
-\item \textbf{I have designed new scanning patterns and algorithms, optimized to radially symmetric targets.}
-I have proven that with these new patterns and algorithms, image distortion is lower compared to the conventional ones, by numerical simulations and experimental SECM scans.
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{Thesis 5--8}
-\scriptsize
-\begin{enumerate}
-\setcounter{enumi}{4}
 \item \textbf{I was the first to use deconvolution to reduce distortion in potentiometric SECM images.}
 To prove the validity of the technique, I have compared deconvoluted images to equilibrium images scanned at a rate which allowed to record equilibrium potentials.
 
 \item \textbf{I have successfully used deconvolution to restore potentiometric SECM images about a corroding carbon steel sample.}
 Evaluation of this data was possible, because scanning time \emph{and} distortion was reduced at the same time.
 
-\item \textbf{I have shown the possibility of blind deconvolution.}
-This method can be used on measurements where the convolution function cannot be determined.
-
 \item \textbf{I have successfully resolved the observed discrepancy in recent papers about impossibly high ion activities.}
 The electric field present in many studied systems -- galvanically corroding ones in particular -- has a direct influence on the measured potential.
-I have shown how big of an error can it cause.
 In the system I have studied, the error was almost four orders of magnitude.
-By taking this effect into account, a more accurate conclusion can be drawn.
-\end{enumerate}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{List of publications}
-\framesubtitle{Related to the dissertation}
-\tiny
-\begin{enumerate}
-\item Ricardo M. Souto, \textbf{András Kiss}, Javier Izquierdo, Lívia Nagy, István Bitter, Géza Nagy, Spatially-resolved imaging of concentration distributions on corroding mag\-ne\-si\-um-based materials exposed to aqueous environments by SECM, \emph{Electrochemistry Communications 26 (2013): 25-28.}, IF.: 4.85, cited by: 31
-
-\item \textbf{András Kiss}, Ricardo M. Souto, Géza Nagy, Investigation of Mg/Al alloy sacrificial anode corrosion with Scanning Electrochemical Microscopy, \emph{Periodica Polytechnica Chemical Engineering 57, no. 1-2 (2013): 11-14.}, IF.: 0.30, cited by: 5
-
-\item Javier Izquierdo, \textbf{András Kiss}, Juan José Santana, Lívia Nagy, István Bitter, Hugh S. Isaacs, Géza Nagy, Ricardo M. Souto, Development of Mg$^{2+}$ ion-selective microelectrodes for potentiometric scanning electrochemical microscopy monitoring of galvanic corrosion processes, \emph{Journal of The Electrochemical Society 160, no. 9 (2013): C451-C459.}, IF.: 3.27, cited by: 23
-
-\item \textbf{András Kiss}, Géza Nagy, New SECM scanning algorithms for improved potentiometric imaging of circularly symmetric targets, \emph{Electrochimica Acta 119 (2014): 169-174.}, IF.: 4.50, cited by: 8
-
-\item \textbf{András Kiss}, Géza Nagy, Deconvolution of potentiometric SECM images recorded with high scan rate, \emph{Electrochimica Acta 163 (2015): 303-309.}, IF.: 4.50, cited by: 7
-
-\item \textbf{András Kiss}, Géza Nagy, Deconvolution in potentiometric SECM, \emph{Electroanalysis 27, no. 3 (2015): 587-590.}, IF.: 2.14, cited by: 2
-
-\item \textbf{András Kiss}, Dániel Filotás, Ricardo M Souto, Géza Nagy, The effect of electric field on potentiometric Scanning Electrochemical Microscopic imaging, \emph{Electrochemistry Communications 77 (2017): 138-141.}, IF.: 4.569
-\end{enumerate}
-\end{frame}
-
-\begin{frame}
-\frametitle{List of publications}
-\framesubtitle{Unrelated to the dissertation}
-\tiny
-\begin{enumerate}
-\setcounter{enumi}{7}
-\item \textbf{András Kiss}, László Kiss, Barna Kovács, Géza Nagy, Air Gap Microcell for Scanning Electrochemical Microscopic Imaging of Carbon Dioxide Output. Model Calculation and Gas Phase SECM Measurements for Estimation of Carbon Dioxide Producing Activity of Microbial Sources, \emph{Electroanalysis 23, no. 10 (2011): 2320-2326.}, IF.: 2.14, cited by: 3
-
-\item Ricardo M. Souto, Javier Izquierdo, Juan José Santana, \textbf{András Kiss}, Lívia Nagy, Géza Nagy. Progress in scanning electrochemical microscopy by coupling potentiometric and amperometric measurement modes, \emph{Current Microscopy Contributions to Advances in Science and Technology, Formatex Research Center, Badajoz (2012): 1407-1415}, cited by: 3
-
-\item Lívia Nagy, Gergely Gyetvai, \textbf{András Kiss}, Ricardo Souto, Javier Izquierdo, Géza Nagy, Speciális célra szolgáló mikroelektródok kifejlesztése és alkalmazása, \emph{Magyar Kémiai Folyóirat 119, 2-3. (2013): 104-109.}
-
-\item Zsuzsanna \H{O}ri, \textbf{András Kiss}, Anton Alexandru Ciucu, Constantin Mihailciuc, Cristian Dragos Stefanescu, Lívia Nagy, Géza Nagy, Sensitivity enhancement of a ,,bananatrode'' biosensor for dopamine based on SECM studies inside its reaction layer, \emph{Sensors and Actuators B: Chemical 190 (2014): 149-156.}, IF.: 4.10, cited by: 4
-
-\item Javier Izquierdo, Bibiana M Fernández-Pérez, Dániel Filotás, Zsuzsanna Őri, \textbf{András Kiss}, Romen T Martín-Gómez, Lívia Nagy, Géza Nagy, Ricardo M Souto, Imaging of Concentration Distributions and Hydrogen Evolution on Corroding Magnesium Exposed to Aqueous Environments Using Scanning Electrochemical Microscopy, \emph{Electroanalysis 28, (2016): 2354-2366.}, IF.: 2.471, cited by: 2
-
-\item A. El Jaouhari,  Dániel Filotás, \textbf{András Kiss}, M. Laabd, E. A. Bazzaoui, Lívia Nagy, Géza Nagy, A. Albourine, J. I. Martins, R. Wang, SECM investigation of electrochemically synthesized polypyrrole from aqueous medium, \emph{Journal of Applied Electrochemistry 46 (2016): 1199-1209.}, IF.: 2.223
 \end{enumerate}
 \end{frame}
 
@@ -526,95 +466,6 @@ Many thanks are due to all my colleagues and friends with whom I have worked dur
 \begin{frame}
 \centering
 Thank you for your attention.
-\end{frame}
-
-\begin{frame}
-\begin{figure}
-\centering
-%\begin{flushleft}
-%\hspace{1.5cm} A
-%\end{flushleft}
-
-\includegraphics[width=0.6\textwidth]{setup.eps} \vspace{1mm}
-
-%\begin{flushleft}
-%\hspace{1.5cm} B
-%\end{flushleft}
-
-\includegraphics[width=0.5\textwidth]{pipette_source.jpg}
-%\caption[Sketch and photo of the model system with the embedded glass pipette Mg$^{2+}$ or K$^+$ ion diffusion source, and the SECM scan setup.]{Sketch (A) and photo (B) of the model system with the embedded glass pipette Mg$^{2+}$ or K$^+$ ion diffusion source, and the SECM scan setup.
-%"$h$" is height of scan, the distance between the plane of the target (pipette orifice) and the SECM tip.
-%"$s$" is the step size, that is the distance between two neighbouring data aquisition points.
-%Red dots indicate the data aquisition points of the 2D raster scan pattern.
-%Not drawn to scale.}
-%\label{fig:setup}
-\end{figure}
-\end{frame}
-
-
-
-\begin{frame}
-\centering
-\includegraphics[width=0.45\textwidth]{phd-figure22.pdf}\hfill \includegraphics[width=0.45\textwidth]{phd-figure23.pdf}
-
-\vfill
-
-(A) Raw scan lines recorded $h$ = 100 $\upmu$m over the center of the pipette orifice, which served as a Mg$^{2+}$ ion diffusion source.
-(B) Scan lines obtained after deconvolution.
-$t_e$ equilibration intervals were 4.9 s (blue), 1.9 s (green), and 0.4 s (red).
-Probe movement speed was 1000 $\upmu$m/s, and probe movement interval was 0.1 s.
-8 scan lines were recorded in each case, 4 forward, 4 reverse scans.
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Practical example: corroding carbon steel sample}
-\framesubtitle{Scanned with an antimony microelectrode}
-\begin{figure}
-\centering
-%top left bottom right
-\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.3\textwidth, angle=-90]{16012906.eps}\includegraphics[trim = 10mm 30mm 0mm 10mm, clip, width=0.3\textwidth, angle=-90]{16012906_deconvoluted.eps}
-
-\includegraphics[width=0.24\textwidth]{cs_cut.jpg}
-
-%\caption[Raw, and deconvoluted SECM image and microphoto of a corroding carbon-steel sample polarized anodically.]{Raw (A), and deconvoluted (B) SECM image and microphoto (C) of a corroding carbon-steel sample polarized anodically with a current density of 10 $mA/cm^2$. Measuring electrode was an antimony pH microelectrode. Potential was measured against an Ag/AgCl/3M KCl. Recorded $h$ = 100 $\upmu$m above the surface with probe movement speed of 1000 $\upmu$m/s, equilibration interval 0.4 s.}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\begin{center}
-\frametitle{The electric field during galvanic corrosion}
-\includegraphics[width=0.5\textwidth]{field.eps}
-
-\begin{equation*}
-\Delta E=E_M-E_R + (\phi_M - \phi_R)
-\label{eq:potential}
-\end{equation*}
-\end{center}
-\end{frame}
-
-
-
-\begin{frame}
-\begin{figure}
-\centering
-\begin{tikzpicture}
-\begin{axis}[ymin=-30, ymax=60, xmin=0, xmax=60, xlabel={time, s}, ylabel={E, mV vs Ag/AgCl/ 3M KCl}, clip marker paths=true, width=7cm, height=7cm, legend style={draw=none}, legend cell align=left]
-\addplot [domain=0:60, color=red, mark=*] table {far.txt};
-\addplot [domain=0:60, color=blue, mark=*] table {close.txt};
-\addlegendentry{Ref. electrode far}
-\addlegendentry{Ref. electrode close}
-\end{axis}
-\end{tikzpicture}
-%\caption{Potential of an Mg$^{2+}$ ISME situated at 100$~\upmu$m above the center of the AZ63 sample, as a function of time. 0--20$~$s$~$: spontaneous corrosion, 20--40$~$s$~$: galvanic corrosion, 40--60$~$$~$: spontaneous corrosion. During galvanic corrosion, the AZ63 sample was coupled to an Fe sample, with identical surface. Reference electrode was a miniature Ag/AgCl/(3 M). Red = the reference electrode is far from the measuring electrode. Blue = the reference electrode is close to the measuring electrode. ,,Close'' = as close as possible, ,,far'' $~\approx ~$1$~$cm. When both electrodes are located close above the AZ63 sample, the potentiometric cell is unaffected by the generated electric field. On the other hand, when the reference electrode is located far from the AZ63 surface, the electric field affects the two electrodes to a different extent, which shows up as the middle section (20--40$~$s) of the red curve.}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{The effect of electric field on the measured potential}
-\framesubtitle{}
-\centering
-\includegraphics[width=0.466\textwidth]{field-figure1.pdf}\includegraphics[width=0.5\textwidth]{field-figure0.pdf}
 \end{frame}
 
 \end{document}
